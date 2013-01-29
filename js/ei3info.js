@@ -69,7 +69,8 @@ $(document).ready(function() {
                 var githubPage;
                 $.getJSON(datas[i].url, function(datasUser) {
                     githubPage = datasUser.url;
-                });
+                })
+                .success(function(datasUser) {githubPage = datasUser.url;});
                 console.log(githubPage);
                 alumniContent += '<div class="span4">';
                 alumniContent += '<img src="'+datas[i].avatar_url+'" width="100" alt="Avatar of '+datas[i].login+'"/>';
