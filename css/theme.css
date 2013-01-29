@@ -1,0 +1,8 @@
+body { padding-top: 50px; }
+@media screen and (max-width: 768px) {
+    body { padding-top: 0px; }
+}
+h1 {
+	padding-top: 70px;
+	margin-top: -70px;
+}
