@@ -1,8 +1,14 @@
 body { padding-top: 50px; }
-@media screen and (max-width: 768px) {
-    body { padding-top: 0px; }
-}
 h1 {
 	padding-top: 70px;
 	margin-top: -70px;
+}
+@media screen and (max-width: 979px) {
+    body { padding-top: 0px; }
+    h1 { padding-top: 0px; margin-top: 0px}
+}
+.marge {
+margin-right: 1em;
+width: 65px;
+text-align: center;
 }
