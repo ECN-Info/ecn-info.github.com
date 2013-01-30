@@ -15,6 +15,10 @@ text-align: center;
 .center {
     text-align: center;
 }
+
 i {
     color: white;
+}
+.navbar {
+    z-index: 10000;
 }
