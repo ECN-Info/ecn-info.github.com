@@ -103,4 +103,19 @@ $(document).ready(function() {
         });
     })();
     // End of GitHub API
+
+    // ------------------------------------
+    // Fetch random facts
+    // ------------------------------------
+    // Chuck Norris
+    $.getJSON("http://api.icndb.com/jokes/random")
+                    .success(function(datas) {
+                        $("#misc .row .span4 .norris").append(datas.value.joke);
+                    });
+    // Numbers
+    $.getJSON("http://numbersapi.com/random/?json")
+                    .success(function(datas) {
+                        $("#misc .row .span4 .numbers").append(datas.text);
+                    });
+    // End of random facts
 });
